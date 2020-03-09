@@ -39,6 +39,8 @@ app.post('/sign_up', function(req,res){
     var reg2 = req.body.reg2;
     var add1 = req.body.add1;
     var add2 = req.body.add2;
+    var room1 = req.body.room1;
+    var room2 = req.body.room2;
 
 	var data = { 
         "Team name": team,
@@ -47,9 +49,11 @@ app.post('/sign_up', function(req,res){
         "Leader email":email,
         "Leader phone":phone,
         "Leader add": add1,
+        "Leader room": room1,
         "Member 2": name2,
         "Member 2 regno":reg2,
-        "Member 2 add":add2
+        "Member 2 add":add2,
+        "Member 2 room":room2
 
     }
     
